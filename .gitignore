@@ -16,6 +16,10 @@ target/
 out/
 build/
 
+# Ignore compiled JS files
+*.js
+*.js.map
+
 ### Eclipse ###
 .apt_generated
 .classpath
