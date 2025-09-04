@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {BandImageService} from "../../services/band-image.service";
 
 @Component({
   selector: 'app-band-image',
@@ -10,7 +11,11 @@ export class BandImageComponent implements OnInit{
 
   imageUrl!: string;
 
-  constructor() { }
+  constructor(private bandImageService: BandImageService) {
+    this.bandImageService.imageUrlUpdate.subscribe(imageUrl => {
+      this.imageUrl = imageUrl;
+    });
+  }
 
   ngOnInit(): void {
   }
