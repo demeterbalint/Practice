@@ -1,0 +1,16 @@
+.band-name__container {
+    width: 390px;
+}
+
+.band-name {
+    margin-bottom: 28px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.band-name:hover {
+    background-color: #eeeeee;
+}

@@ -1,0 +1,27 @@
+.main {
+    text-align: center;
+}
+
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto;
+    width: 800px;
+}
+
+.genre-button {
+    display: inline-block;
+    margin: 20px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #a2bcb6;
+    border-radius: 20px;
+    line-height: 40px;
+    box-shadow: 1px 1px 10px 1px #a2bcb6;
+    cursor: pointer;
+}
+
+.genre-button:hover {
+    background-color: #a2bcb6;
+    color: white;
+}

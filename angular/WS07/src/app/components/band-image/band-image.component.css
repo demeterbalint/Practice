@@ -1,0 +1,8 @@
+.band-image__container {
+    width: 390px;
+    overflow: hidden;
+}
+
+.band-image {
+    height: 242px;
+}
