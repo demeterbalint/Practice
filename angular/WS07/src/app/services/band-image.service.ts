@@ -6,7 +6,7 @@ import {Subject} from "rxjs";
 })
 export class BandImageService {
 
-  private imageUrlUpdate: Subject<string>;
+  imageUrlUpdate: Subject<string> =  new Subject();
 
   constructor() { }
 }

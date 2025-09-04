@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {BandImageService} from "../../services/band-image.service";
 
 @Component({
   selector: 'app-band-picker',
@@ -25,12 +26,12 @@ export class BandPickerComponent implements OnInit {
     {genre: 'Metal', name: 'The Southern Oracle', imgUrl: 'https://zeneszoveg.hu/img/169852_101251926619256_100977143313401_6198_878121_o.jpg'},
   ];
 
-  constructor() { }
+  constructor(private bandImageService: BandImageService) { }
 
   ngOnInit(): void {
   }
 
   displayBandImage(imageUrl: string) {
-
+    this.bandImageService.imageUrlUpdate.next(imageUrl);
   }
 }
