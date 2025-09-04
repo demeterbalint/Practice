@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'WS07';
 
-  private genres = ['Pop', 'Rap', 'Rock', 'Metal'];
+  protected genres = ['Pop', 'Rap', 'Rock', 'Metal'];
   private chosenGenre!: string;
 
   choseGenre(genreIndex: number) {

@@ -1,7 +1,7 @@
 <div class="main">
     <h1>04 - Component Interaction Practice</h1><br>
-    <div class="genre-buttons">
-        <div class="genre-button"></div>
+    <div class="genre-buttons" *ngFor="let genre of genres">
+        <div class="genre-button">{{genre}}</div>
     </div>
 
     <div class="side-by-side">
