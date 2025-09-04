@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-band-picker',
@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BandPickerComponent implements OnInit {
 
-  genre!: string;
+  @Input() genre!: string;
 
   bands = [
     {genre: 'Pop', name: 'Michael Jackson', imgUrl: 'http://cdn.24.co.za/files/Cms/General/d/8643/8241de9073404c978f2558d8d48e0f14.png'},

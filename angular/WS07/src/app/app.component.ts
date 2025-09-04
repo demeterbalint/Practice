@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'WS07';
 
   protected genres = ['Pop', 'Rap', 'Rock', 'Metal'];
-  private chosenGenre!: string;
+  protected chosenGenre!: string;
 
   choseGenre(genreIndex: number) {
     this.chosenGenre = this.genres[genreIndex];
