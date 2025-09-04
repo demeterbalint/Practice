@@ -1,5 +1,5 @@
-<div class="band-name__container">
-    <div class="band-name">
-
+<div *ngFor="let band of bands" class="band-name__container">
+    <div *ngIf="band.genre == genre" (click)="displayBandImage(band.imgUrl)" class="band-name">
+        {{band.name}}
     </div>
 </div>
